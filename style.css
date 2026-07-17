@@ -66,8 +66,7 @@ button {
     background-color: #eba7cf;
     color: #965893;
     position: absolute;
-    left: 160px; /* Aligns it next to Yes button initially */
-    /* Smooth 0.3-second ease-out glide for position changes */
+    left: 160px; 
     transition: left 0.3s ease-out, top 0.3s ease-out; 
 }
 
