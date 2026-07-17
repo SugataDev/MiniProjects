@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fce4ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-container {
+    font-size: 80px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+    color: #d81b60;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    min-height: 60px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#yes-btn {
+    background-color: #e91e63;
+    color: white;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+    transition: transform 0.2s ease;
+}
+
+#yes-btn:hover {
+    transform: scale(1.1);
+}
+
+#no-btn {
+    background-color: #eba7cf;
+    color: #965893;
+    position: absolute;
+    left: 160px; /* Aligns it next to Yes button initially */
+    /* Smooth 0.3-second ease-out glide for position changes */
+    transition: left 0.3s ease-out, top 0.3s ease-out; 
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
